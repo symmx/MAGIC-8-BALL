@@ -1,34 +1,40 @@
-let userName = 'Jean'
+let userName = ''
 
 userName ?
-console.log(`Hello, ${userName}!`) :
-console.log('Hello stranger!');
+    console.log (`Hello, ${userName}!`) :
+    console.log ('Hello stranger');
 
-const userQuestion = 'Can i be rich?'
-  if (userName = userName) {
-    console.log(`${userName} asking: ${userQuestion}`);
-  }
+let userQuestion = 'Can i be rich?'
+    console.log(`your question is: ${userQuestion}`);
 
 const randomNumber = Math.floor(Math.random() * 8);
 
-let eightBall = ''
+switch (randomNumber) {
+  case 0:
+    eightBall = 'It is certain.';
+    break;
+  case 1:
+    eightBall = 'It is decidedly so.';
+    break;
+  case 2:
+    eightBall = 'Reply Hazy try again.';
+    break;
+  case 3:
+    eightBall = 'Cannot predict now.';
+    break;
+  case 4:
+    eightBall = 'Do not count on it.';
+    break;
+  case 5:
+    eightBall = 'My source say no.';
+    break;
+  case 6:
+    eightBall = 'Outlook not so good.';
+    break;
+  case 7:
+    eightBall = 'Signs point to yes.';
+    break;
+}
+console.log(`magic 8-ball says: ${eightBall}`)
 
-  console.log(`Magic 8-ball says ${eightBall}`)
-  console.log(randomNumber);
-  if (randomNumber === 0) {
-    console.log('It is certain')
-  } else if (randomNumber === 1){
-    console.log('It is decidedly so');
-  } else if (randomNumber === 2) {
-    console.log('Reply hazy try again');
-  } else if (randomNumber === 3) {
-    console.log('Cannot predict now');
-  } else if (randomNumber === 4) {
-    console.log('Do not count on it');
-  } else if (randomNumber === 5) {
-    console.log('Outlook not so good');
-  } else if (randomNumber === 6) {
-    console.log('Signs point to yes');
-  } else if (randomNumber === 7) {
-    console.log('Try again');
-  }
+
