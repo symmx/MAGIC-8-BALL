@@ -4,37 +4,27 @@ userName ?
     console.log (`Hello, ${userName}!`) :
     console.log ('Hello stranger');
 
-let userQuestion = 'Can i be rich?'
+let userQuestion = 'apakah saya akan jadi programmer?'
     console.log(`your question is: ${userQuestion}`);
 
 const randomNumber = Math.floor(Math.random() * 8);
 
-switch (randomNumber) {
-  case 0:
-    eightBall = 'It is certain.';
-    break;
-  case 1:
-    eightBall = 'It is decidedly so.';
-    break;
-  case 2:
-    eightBall = 'Reply Hazy try again.';
-    break;
-  case 3:
-    eightBall = 'Cannot predict now.';
-    break;
-  case 4:
-    eightBall = 'Do not count on it.';
-    break;
-  case 5:
-    eightBall = 'My source say no.';
-    break;
-  case 6:
-    eightBall = 'Outlook not so good.';
-    break;
-  case 7:
-    eightBall = 'Signs point to yes.';
-    break;
-}
+let eightBall = ''
 console.log(`magic 8-ball says: ${eightBall}`)
-
-
+if (randomNumber === 0) { 
+    console.log("Nanya apaan sih lu");
+} else if (randomNumber == 1) {
+    console.log("Mana gua tau");
+} else if (randomNumber == 2) {
+    console.log("Tergantung kalo itumah");
+} else if (randomNumber == 3) {
+    console.log("Bisa sih, tapi gimana ya...bingung juga gua");
+} else if (randomNumber == 4) {
+    console.log("Bukannya gabisa jawab cuman pertanyaan lu susah banget");
+} else if (randomNumber == 5) {
+    console.log("Ya gabakal lah");
+} else if (randomNumber == 6) {
+    console.log("Kalo diliat liat sih iya");
+} else if (randomNumber == 7) {
+    console.log("Bisa jadi");
+}
